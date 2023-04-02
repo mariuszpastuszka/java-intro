@@ -1,5 +1,5 @@
 package org.example;
-public class Loops {
+public class WhileLoop {
     public static void main(String[] args) {
         // repeat that line 100 times
         System.out.println("Let's play with loops");
