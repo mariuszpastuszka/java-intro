@@ -24,8 +24,36 @@ public class PersonExample {
         System.out.println("mariusz.name is " + mariusz.name);
         System.out.println("birgit.name is: " + birgit.name);
 
-        String person1Name;
-        String person1Surname;
-        int person1age;
+//        String person1Name;
+//        String person1Surname;
+//        int person1age;
+        System.out.println("phoneNumber for birgit is: " + birgit.phoneNumber);
+        Phone birgitPhone = new Phone();
+        birgitPhone.countryCode = "372";
+
+
+        birgit.phoneNumber = birgitPhone;
+        System.out.println("country code for birgit is: " + birgit.phoneNumber.countryCode);
+        System.out.println("Does it print??");
+
+
+        System.out.println("Now let's create new person with all the values");
+        Person personWithAllFields = new Person();
+        personWithAllFields.name = "joe";
+        personWithAllFields.surname = "doe";
+        personWithAllFields.age = 18;
+
+        Address joeDoeAddress = new Address();
+        joeDoeAddress.country = "UK";
+        joeDoeAddress.city = "London";
+        joeDoeAddress.street = "Main";
+        joeDoeAddress.flatNumber = "42D";
+        joeDoeAddress.zipCode = "37-051";
+        personWithAllFields.personAddress = joeDoeAddress;
+
+        Phone joePhone = new Phone();
+        joePhone.countryCode = "48";
+        joePhone.phoneNumber = "4444444444";
+        personWithAllFields.phoneNumber = joePhone;
     }
 }
