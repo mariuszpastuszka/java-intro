@@ -5,6 +5,10 @@ public class HomeworkCalculator {
     public static void main(String[] args) {
         System.out.println("Using my homework calculator");
         add(10, 15);
+        int numberOne = 11;
+        System.out.println("number one is: " + numberOne);
+        int numberTwo = 15;
+        add(numberOne, numberTwo);
         addManyNumbers(1, 1, 2, 2, 1);
     }
 
