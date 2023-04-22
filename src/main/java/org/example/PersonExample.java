@@ -92,5 +92,12 @@ public class PersonExample {
         );
 
         System.out.println("content of newPerson variable: " + newPerson);
+
+        Smartphone iphone13 = new Smartphone("Apple", "13");
+//        iphone13.model = "14";
+        iphone13.setModel("14");
+//        iphone13.age = -15;
+
+        System.out.println("iphone age is: " + iphone13.getAge());
     }
 }
