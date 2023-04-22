@@ -4,6 +4,8 @@ public class Person {
     String name;
     String surname;
     int age;
+
+    int height;
     Address personAddress;
     Phone phoneNumber;
     public Person(String name, String surname, int age, Address personAddress, Phone phoneNumber) {
@@ -23,5 +25,17 @@ public class Person {
     // no return type
     // named like a class
     public Person() {
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", personAddress=" + personAddress +
+                ", phoneNumber=" + phoneNumber +
+                '}';
     }
 }

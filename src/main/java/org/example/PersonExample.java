@@ -75,5 +75,22 @@ public class PersonExample {
                 40,
                 null,
                 null);
+
+        System.out.println("Now with all 3 constructors together");
+        Phone newPhone = new Phone("22", "12345");
+        Address newAddress = new Address("Poland",
+                "Warsaw",
+                "Marszalkowska",
+                "40D",
+                "00972");
+        Person newPerson = new Person(
+                "james",
+                "johnes",
+                18,
+                newAddress,
+                newPhone
+        );
+
+        System.out.println("content of newPerson variable: " + newPerson);
     }
 }
