@@ -55,5 +55,25 @@ public class PersonExample {
         joePhone.countryCode = "48";
         joePhone.phoneNumber = "4444444444";
         personWithAllFields.phoneNumber = joePhone;
+
+        Person withConstructor = new Person(
+                "Mariusz",
+                "Pastuszka",
+                40,
+                joeDoeAddress,
+                joePhone);
+
+        Person with3Values = new Person(
+                "Mariusz",
+                "Pastuszka",
+                40
+        );
+
+        Person withConstructor2 = new Person(
+                "Mariusz",
+                "Pastuszka",
+                40,
+                null,
+                null);
     }
 }
