@@ -99,5 +99,7 @@ public class PersonExample {
 //        iphone13.age = -15;
 
         System.out.println("iphone age is: " + iphone13.getAge());
+
+        iphone13.setModelAndBrand("13 pro", "OnePlus");
     }
 }
